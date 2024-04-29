@@ -1,10 +1,3 @@
-/**
-* Template Name: DevFolio
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -83,12 +76,11 @@
    * Toggle .header-scrolled class to #header when page is scrolled
    */
   let selectHeader = select('#header')
+        selectHeader.classList.add('header-scrolled')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled')
-      } else {
-        selectHeader.classList.remove('header-scrolled')
       }
     }
     window.addEventListener('load', headerScrolled)
